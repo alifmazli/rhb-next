@@ -1,0 +1,32 @@
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.featuredTitle {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.dealsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.dealPoster {
+  width: calc(50% - 0.5rem); /* adjust as needed */
+  margin-bottom: 1rem;
+  border-radius: 15px;
+}
