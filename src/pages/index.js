@@ -18,15 +18,19 @@ export default function Landing() {
               height={200}
               alt="RHB logo"
             />
-            <h1 class="text-3xl font-bold text-gray-900 sm:text-5xl">App</h1>
+            <h1 class="text-2xl font-bold sm:text-5xl">App</h1>
           </div>
-          <p class="font-bold text-xl text-gray-600 mt-2 sm:text-xl sm:leading-relaxed">Powered by RHB Next</p>
+          <p class="font-bold text-sm text-centre mt-2 sm:text-xl sm:leading-relaxed">
+            Powered by{" "}
+            <a href="https://github.com/alifmazli/rhb-next">RHB Next</a>
+          </p>
           <div class="mt-8 flex flex-wrap justify-center gap-4">
-            <Link
-              class="block w-full rounded bg-blue-600 px-12 py-3 my-36 text-sm font-medium text-gray-100 shadow hover:bg-blue-700 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-              href="/home"
-            >
-              Get Started
+            <Link class="my-36 sm:w-auto" href="/home">
+              <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                  Enter
+                </span>
+              </button>
             </Link>
           </div>
         </div>
