@@ -1,8 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import HomeHeader from "@/components/Home/Header/Header";
+import Card from "@/components/Home/Card/Card";
+import Services from "@/components/Home/Services/Services";
+import FinHealthCheck from "@/components/Home/FinHealthCheck/FinHealthCheck";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,6 +13,8 @@ export default function Home() {
   const expenses = 1000;
   const averageExpenses = 1500;
   const userRank = 100;
+  const nextServices = ["NextDeals", "NextEvents"];
+  const coreServices = ["Transfer", "Insurance", "Save"];
 
   return (
     <>
@@ -20,7 +25,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header aria-label="Page Header" class="bg-[#0064AB]">
+      <HomeHeader />
+      {/* <header aria-label="Page Header" class="bg-[#0064AB]">
         <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-3 sm:px-6 lg:px-8">
           <h1 class="text-2xl font-bold text-white sm:text-3xl mb-4">
             RHB Next
@@ -91,82 +97,13 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </header>
+      </header> */}
 
-      <main className="bg-white">
-        <Link
-          class="mt-5 relative block rounded-xl border border-gray-100 p-8 shadow-2xl bg-white mx-4"
-          href=""
-        >
-          <div class="sm:pr-8">
-            <h3 class="mt-4 text-xl font-bold text-gray-900">
-              🛑 Attention required!
-            </h3>
-
-            <p class="mt-2 text-sm sm:block">
-              Your expenses this month is <b>35% more</b> compared to students
-              like you using RHB Next!
-            </p>
-          </div>
-        </Link>
-
-        <div className="mx-8 mt-8 mb-6">
-          <h2 className="text-l font-bold text-gray-900">RHB Next Services</h2>
-          <div className="flex flex-col-4 text-center py-4">
-            <div className="place-items-center flex grid grid-cols-2 gap-2 space-around">
-              <Link
-                class="shadow-2xl inline-flex items-center rounded border-2 border-[#0064AB] bg-[#fff] px-5 py-3 text-xs font-medium text-gray-900 transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
-                href="/verify/sign-in"
-                rel="noreferrer"
-              >
-                NextDeals
-              </Link>
-              <Link
-                class="shadow-2xl inline-flex items-center rounded border-2 border-[#0064AB] bg-[#fff] px-5 py-3 text-xs font-medium text-gray-900 transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
-                href="/home/next-events"
-                rel="noreferrer"
-              >
-                NextEvents
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        <div className="mx-8 mt-8 mb-6">
-          <h2 className="text-l font-bold text-gray-900">RHB Next Services</h2>
-          <div className="flex flex-col-4 items-start text-center py-4">
-            <div className="place-items-center flex grid grid-cols-2 gap-2 space-around">
-              <Link
-                class="shadow-2xl inline-flex items-center rounded border-2 border-[#0064AB] bg-[#fff] px-5 py-3 text-xs font-medium text-gray-900 transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
-                href="/verify/sign-in"
-                rel="noreferrer"
-              >
-                Scan
-              </Link>
-              <Link
-                class="shadow-2xl inline-flex items-center rounded border-2 border-[#0064AB] bg-[#fff] px-5 py-3 text-xs font-medium text-gray-900 transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
-                href="/verify/sign-in"
-                rel="noreferrer"
-              >
-                Pay
-              </Link>
-              <Link
-                class="shadow-2xl inline-flex items-center rounded border-2 border-[#0064AB] bg-[#fff] px-5 py-3 text-xs font-medium text-gray-900 transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
-                href="/verify/sign-in"
-                rel="noreferrer"
-              >
-                Collect
-              </Link>
-              <Link
-                class="shadow-2xl inline-flex items-center rounded border-2 border-[#0064AB] bg-[#fff] px-5 py-3 text-xs font-medium text-gray-900 transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
-                href="/verify/sign-in"
-                rel="noreferrer"
-              >
-                Pocket
-              </Link>
-            </div>
-          </div>
-        </div>
+      <main className="">
+        <Card />
+        <Services title="RHB Next" services={nextServices} />
+        {/* <Services title="RHB Core" services={coreServices} /> */}
+        <FinHealthCheck />
 
         <div className="bg-white rounded-lg shadow-md p-4 my-4">
           <h2 className="text-l font-bold text-gray-900 mb-4">

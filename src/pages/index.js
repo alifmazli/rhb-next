@@ -13,7 +13,7 @@ export default function Landing() {
         <div className="mx-auto max-w-xl justify-center text-center">
           <div className="flex justify-center content-center items-end">
             <Image
-              src="/../public/rhb/rhb-logo.png"
+              src="/../public/images/rhb.png"
               width={200}
               height={200}
               alt="RHB logo"

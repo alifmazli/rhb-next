@@ -5,10 +5,10 @@
       "@/*": [
         "./src/*"
       ],
-      "@assets/*": [
-        "./public/*"
+      "@images/*": [
+        "./public/images/*"
       ],
-      "@ui": [
+      "@components/*": [
         "./src/components/*"
       ]
     }
