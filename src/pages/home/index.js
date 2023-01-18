@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Link from "next/link";
-import HomeHeader from "@/components/Home/Header/Header";
+import Header from "@/components/Home/Header/Header";
 import Card from "@/components/Home/Card/Card";
 import Services from "@/components/Home/Services/Services";
 import FinHealthCheck from "@/components/Home/FinHealthCheck/FinHealthCheck";
@@ -25,7 +25,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <HomeHeader />
+      <Header />
       {/* <header aria-label="Page Header" class="bg-[#0064AB]">
         <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-3 sm:px-6 lg:px-8">
           <h1 class="text-2xl font-bold text-white sm:text-3xl mb-4">
@@ -105,7 +105,7 @@ export default function Home() {
         {/* <Services title="RHB Core" services={coreServices} /> */}
         <FinHealthCheck />
 
-        <div className="bg-white rounded-lg shadow-md p-4 my-4">
+        {/* <div className="bg-white rounded-lg shadow-md p-4 my-4">
           <h2 className="text-l font-bold text-gray-900 mb-4">
             Financial Health Check
           </h2>
@@ -234,7 +234,7 @@ export default function Home() {
               </div>
             </article>
           </div>
-        </div>
+        </div> */}
       </main>
     </>
   );
