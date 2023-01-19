@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = ({ title }) => {
   return (
     <>
       <nav class="border-gray-200 sm:px-4 py-4 rounded dark:bg-white">
         <div class="container flex flex-wrap justify-between relative">
-          <a href="#" class="flex px-4 py-4 items-center">
+          <Link href="/home" class="flex px-4 py-4 items-center">
             <Image
               src="/../public/images/rhb.png"
               class="h-6 mr-3 sm:h-9"
@@ -16,7 +17,7 @@ const Header = ({ title }) => {
             {/* <span class="self-center text-xl font-bold whitespace-nowrap dark:text-white">
             App
           </span> */}
-          </a>
+          </Link>
 
           {/* User profile button */}
           <div class="flex items-center md:order-2">
