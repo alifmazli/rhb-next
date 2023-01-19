@@ -88,16 +88,40 @@ h1,
 h2,
 h3 {
   color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3 {
   font-weight: bold;
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1rem;
+}
+
+p {
+  font-size: .75rem;
 }
 
 button {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+}
+
+.image-container {
+  width: 100%;
+
+  > div {
+    position: unset !important;
+  }
+
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
 }
 
 /* @media (prefers-color-scheme: light) {

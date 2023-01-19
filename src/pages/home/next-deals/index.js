@@ -8,21 +8,30 @@ import Deals from "@/components/Home/Services/Deals";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const dealPosters = [
-  "/../public/next-deals/redbus.bmp",
-  "/../public/next-deals/breakout-room.bmp",
-  "/../public/next-deals/gocar.bmp",
-  "/../public/next-deals/sunwaypals.bmp",
-  "/../public/next-deals/windlab.bmp",
-  "/../public/next-deals/hauntu.bmp",
-  "/../public/next-deals/bus-online-ticket.bmp",
+export const dealPosters = [
+  {
+    redbus: "/../public/images/next-deals/redbus.bmp",
+    // "/../public/images/next-deals/breakout-room.bmp",
+    // "/../public/images/next-deals/gocar.bmp",
+    // "/../public/images/next-deals/sunwaypals.bmp",
+    // "/../public/images/next-deals/windlab.bmp",
+    // "/../public/images/next-deals/hauntu.bmp",
+    // "/../public/images/next-deals/bus-online-ticket.bmp",
+  },
 ];
 
 const data = [
   {
     title: "Title 1",
-    description: "Description 1",
+    description:
+      "Elit irure ullamco sint cillum in cillum excepteur incididunt incididunt Lorem qui.",
     image: dealPosters[0],
+  },
+  {
+    title: "Title 2",
+    description:
+      "Minim non exercitation incididunt deserunt eiusmod irure amet mollit veniam anim eiusmod deserunt aliqua tempor.",
+    image: dealPosters[1],
   },
 ];
 
@@ -36,168 +45,7 @@ export default function NextDeals() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header title="NextDeals for you" />
-
       <Deals data={data} />
-      <main
-        aria-label="Main"
-        className="flex items-center justify-center px-5 sm:px-12 lg:col-span-7 lg:py-12 lg:px-16 xl:col-span-6"
-      >
-        <section>
-          <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
-            <ul class="grid gap-2 mt-4 grid-cols-2">
-              <li>
-                <Link
-                  href="/home/next-deals/details"
-                  class="block overflow-hidden group"
-                >
-                  <Image
-                    src={dealPosters[0]}
-                    alt=""
-                    class="h-[10rem] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-                    width={150}
-                    height={150}
-                  />
-
-                  <div class="relative py-2">
-                    <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
-                      Save up to 60%
-                    </h3>
-
-                    {/* <p class="mt-2">
-                      <span class="sr-only"> Regular Price </span>
-
-                      <span class="tracking-wider text-gray-900">
-                        {" "}
-                        RM 0.00{" "}
-                      </span>
-                    </p> */}
-                  </div>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/home/next-deals/details"
-                  class="block overflow-hidden group"
-                >
-                  <Image
-                    src={dealPosters[1]}
-                    alt=""
-                    class="h-[10rem] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-                    width={150}
-                    height={150}
-                  />
-
-                  <div class="relative py-2">
-                    <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
-                      Breakout Room Student Promo
-                    </h3>
-                  </div>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/home/next-deals/details"
-                  class="block overflow-hidden group"
-                >
-                  <Image
-                    src={dealPosters[2]}
-                    alt=""
-                    class="h-[10rem] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-                    width={150}
-                    height={150}
-                  />
-
-                  <div class="relative py-2">
-                    <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
-                      20% off Student Discount (capped at RM60)
-                    </h3>
-                  </div>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/home/next-deals/details"
-                  class="block overflow-hidden group"
-                >
-                  <Image
-                    src={dealPosters[3]}
-                    alt=""
-                    class="h-[10rem] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-                    width={150}
-                    height={150}
-                  />
-
-                  <div class="relative py-2">
-                    <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
-                      Get RM500 worth of e-vouchers
-                    </h3>
-                  </div>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/home/next-deals/details"
-                  class="block overflow-hidden group"
-                >
-                  <Image
-                    src={dealPosters[4]}
-                    alt=""
-                    class="h-[10rem] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-                    width={150}
-                    height={150}
-                  />
-
-                  <div class="relative py-2">
-                    <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
-                      30% Off 10-Flight Group Package
-                    </h3>
-                  </div>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/home/next-deals/details"
-                  class="block overflow-hidden group"
-                >
-                  <Image
-                    src={dealPosters[5]}
-                    alt=""
-                    class="h-[10rem] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-                    width={150}
-                    height={150}
-                  />
-
-                  <div class="relative py-2">
-                    <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
-                      HAUNTU Student Promo
-                    </h3>
-                  </div>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/home/next-deals/details"
-                  class="block overflow-hidden group"
-                >
-                  <Image
-                    src={dealPosters[6]}
-                    alt=""
-                    class="h-[10rem] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-                    width={150}
-                    height={150}
-                  />
-
-                  <div class="relative py-2">
-                    <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
-                      50% Offer for New Member
-                    </h3>
-                  </div>
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </main>
     </>
   );
 }
