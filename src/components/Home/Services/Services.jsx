@@ -3,7 +3,7 @@ import Link from "next/link";
 const Services = () => {
   return (
     <div className="mt-4">
-      <h2>{title}</h2>
+      {/* <h2>{title}</h2> */}
       <div className="space-y-2 space-x-2 items-center justify-content-between text-left">
         <Link href="home/next-deals">
           <button

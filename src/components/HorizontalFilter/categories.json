@@ -1,0 +1,4 @@
+{
+  "description": "List of deal categories",
+  "categories": ["Transport", "Food", "Health", "Sports", "Entertainment"]
+}

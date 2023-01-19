@@ -5,6 +5,8 @@ import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import Header from "@/components/Home/Header/Header";
 import Deals from "@/components/Home/Services/Deals";
+import categories from "@components/HorizontalFilter/categories.json";
+import HorizontalFilter from "@/components/HorizontalFilter/HorizontalFilter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,6 +47,12 @@ export default function NextDeals() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header title="NextDeals for you" />
+      {/* Horizontal filter */}
+      <ul className="filter-container my-4 space-x-2">
+        {categories.categories.map((category) => (
+          <HorizontalFilter data={category} key={category} />
+        ))}
+      </ul>
       <Deals data={data} />
     </>
   );

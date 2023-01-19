@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import Link from "next/link";
 import Image from "next/image";
 import gocar from "@images/next-deals/gocar.bmp";
+import HorizontalFilter from "@/components/HorizontalFilter/HorizontalFilter";
 
 const Deals = (props) => {
   const dataLength = props.data.length;
@@ -9,7 +10,7 @@ const Deals = (props) => {
     <div className="space-y-2">
       {props.data.map((item, index) => (
         <div
-          className={` w-1/2 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700`}
+          className={`w-1/${dataLength} bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700`}
           key={index}
         >
           <Link href="#">
