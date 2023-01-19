@@ -11,11 +11,13 @@ const Deals = (props) => {
     >
       <Link href="#">
         <div className="image-container">
-          <Image
-            className="image rounded-t-lg"
-            src={gocar}
-            alt={props.data.title}
-          />
+          <Link href={`/home/next-deals/${props.data.id}`}>
+            <Image
+              className="image rounded-t-lg"
+              src={gocar}
+              alt={props.data.title}
+            />
+          </Link>
         </div>
       </Link>
       <div class="p-5">
@@ -39,6 +41,7 @@ const Deals = (props) => {
 
 Deals.propTypes = {
   data: PropTypes.shape({
+    id: PropTypes.number,
     title: PropTypes.string,
     description: PropTypes.string,
     image: PropTypes.string,

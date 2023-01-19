@@ -23,12 +23,14 @@ export const dealPosters = [
 
 const deals = [
   {
+    id: 1,
     title: "Title 1",
     description:
       "Elit irure ullamco sint cillum in cillum excepteur incididunt incididunt Lorem qui.",
     image: dealPosters[0],
   },
   {
+    id: 2,
     title: "Title 2",
     description:
       "Minim non exercitation incididunt deserunt eiusmod irure amet mollit veniam anim eiusmod deserunt aliqua tempor.",
