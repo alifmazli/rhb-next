@@ -25,7 +25,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header title="Home" />
       {/* <header aria-label="Page Header" class="bg-[#0064AB]">
         <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-3 sm:px-6 lg:px-8">
           <h1 class="text-2xl font-bold text-white sm:text-3xl mb-4">

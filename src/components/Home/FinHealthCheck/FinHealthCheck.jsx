@@ -2,9 +2,9 @@ import FinChart from "./FinChart";
 
 const FinHealthCheck = () => {
   return (
-    <div>
+    <div className="mt-4">
       <h2>Financial Health Check</h2>
-      {/* <FinChart /> */}
+      <FinChart />
     </div>
   );
 };
