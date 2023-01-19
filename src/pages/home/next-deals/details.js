@@ -1,22 +1,13 @@
-import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "@/styles/NextDeals.module.css";
 import Link from "next/link";
-import { IoIosHeartEmpty, IoIosHeart } from "react-icons/io";
 import { useState } from "react";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function NextDealsDetails() {
   const [isFavorited, setIsFavorited] = useState(false);
 
   return (
     <main className="">
-      {/* <div className="flex flex-col items-center py-12">
-        <h1 className="text-2xl font-bold text-gray-900">RHB App</h1>
-        <p className="font-bold text-gray-300">Powered by RHBNext</p>
-      </div> */}
       <Link href="/home" className="text-sm font-light ml-5">
         Home
       </Link>

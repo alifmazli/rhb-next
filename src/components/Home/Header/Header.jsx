@@ -3,7 +3,7 @@ import Image from "next/image";
 const Header = ({ title }) => {
   return (
     <>
-      <nav class="bg-white border-gray-200 sm:px-4 py-4 rounded dark:bg-white">
+      <nav class="border-gray-200 sm:px-4 py-4 rounded dark:bg-white">
         <div class="container flex flex-wrap justify-between relative">
           <a href="#" class="flex px-4 py-4 items-center">
             <Image
@@ -31,14 +31,14 @@ const Header = ({ title }) => {
               <span class="sr-only">Open user menu</span>
               <Image
                 class="w-8 h-8 rounded-full"
-                src="/../public/images/rhb.png"
+                src="/../public/images/kanye.bmp"
                 alt="user photo"
                 width={30}
                 height={30}
               />
             </button>
             {/* Dropdown menu */}
-            <div
+            {/* <div
               class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
               id="user-dropdown"
             >
@@ -84,8 +84,8 @@ const Header = ({ title }) => {
                   </a>
                 </li>
               </ul>
-            </div>
-            <button
+            </div> */}
+            {/* <button
               data-collapse-toggle="mobile-menu-2"
               type="button"
               class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -106,7 +106,8 @@ const Header = ({ title }) => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </button>
+            </button> */}
+            {/* End dropdown menu */}
           </div>
           <div
             class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
