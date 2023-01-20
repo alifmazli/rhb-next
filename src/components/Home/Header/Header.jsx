@@ -1,22 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import rhbLogo from "@images/rhb.png";
 
 const Header = ({ title }) => {
   return (
     <>
-      <nav class="border-gray-200 sm:px-4 py-4 rounded dark:bg-white">
+      <nav class="py-4 rounded dark:bg-white">
         <div class="container flex flex-wrap justify-between relative">
-          <Link href="/home" class="flex px-4 py-4 items-center">
-            <Image
-              src="/../public/images/rhb.png"
-              class="h-6 mr-3 sm:h-9"
-              alt="RHB Logo"
-              layout="fill"
-              objectFit="contain"
-            />
-            {/* <span class="self-center text-xl font-bold whitespace-nowrap dark:text-white">
-            App
-          </span> */}
+          <Link href="/home" class="flex items-center">
+            <Image src={rhbLogo} className="" alt="RHB Logo" height={30} />
+            <span class="mx-2 self-center text-xl font-bold whitespace-nowrap dark:text-white">
+              Next
+            </span>
           </Link>
 
           {/* User profile button */}
@@ -110,7 +105,7 @@ const Header = ({ title }) => {
             </button> */}
             {/* End dropdown menu */}
           </div>
-          <div
+          {/* <div
             class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="mobile-menu-2"
           >
@@ -157,11 +152,11 @@ const Header = ({ title }) => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </nav>
       <div className="mt-2 mb-2">
-        <h2>{title}</h2>
+        <h1>{title}</h1>
       </div>
     </>
   );

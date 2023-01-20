@@ -10,11 +10,7 @@ import FinHealthCheck from "@/components/Home/FinHealthCheck/FinHealthCheck";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const expenses = 1000;
-  const averageExpenses = 1500;
-  const userRank = 100;
   const nextServices = ["NextDeals", "NextEvents"];
-  const coreServices = ["Transfer", "Insurance", "Save"];
 
   return (
     <>
