@@ -4,22 +4,10 @@ import Header from "@/components/Home/Header/Header";
 import Deals from "@/components/Home/Services/Deals";
 import categories from "@components/HorizontalFilter/categories.json";
 import HorizontalFilter from "@/components/HorizontalFilter/HorizontalFilter";
-import Image from "next/image";
-import Link from "next/link";
+import { dealsData } from "./deals-data.json";
+import images from "@images";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const dealPosters = [
-  {
-    redbus: "/../public/images/next-deals/redbus.bmp",
-    // "/../public/images/next-deals/breakout-room.bmp",
-    // "/../public/images/next-deals/gocar.bmp",
-    // "/../public/images/next-deals/sunwaypals.bmp",
-    // "/../public/images/next-deals/windlab.bmp",
-    // "/../public/images/next-deals/hauntu.bmp",
-    // "/../public/images/next-deals/bus-online-ticket.bmp",
-  },
-];
 
 const deals = [
   {
@@ -27,14 +15,14 @@ const deals = [
     title: "Title 1",
     description:
       "Elit irure ullamco sint cillum in cillum excepteur incididunt incididunt Lorem qui.",
-    image: dealPosters[0],
+    image: images.redbus,
   },
   {
     id: 2,
     title: "Title 2",
     description:
       "Minim non exercitation incididunt deserunt eiusmod irure amet mollit veniam anim eiusmod deserunt aliqua tempor.",
-    image: dealPosters[1],
+    image: images.redbus,
   },
 ];
 
