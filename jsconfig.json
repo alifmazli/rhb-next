@@ -5,8 +5,11 @@
       "@/*": [
         "./src/*"
       ],
-      "@images/*": [
+      "@assets/*": [
         "./public/images/*"
+      ],
+      "@images": [
+        "./src/constants/images"
       ],
       "@components/*": [
         "./src/components/*"

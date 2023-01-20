@@ -1,0 +1,52 @@
+{
+  "dealsData": [
+    {
+      "id": 0,
+      "brandName": "Hauntu",
+      "affiliateItemName": "HAUNTU Student Promo",
+      "images": ["@images/hauntu"],
+      "category": "Entertainment",
+      "code": "student45"
+    },
+    {
+      "id": 1,
+      "brandName": "Breakout",
+      "affiliateItemName": "Breakout Student Promotion",
+      "images": ["@images/breakout"],
+      "category": "Entertainment",
+      "code": "STUDENT20"
+    },
+    {
+      "id": 2,
+      "brandName": "Windlab 1 Utama",
+      "affiliateItemName": "30% Off 10-Flight Group Package",
+      "images": ["@images/windlab"],
+      "category": "Entertainment",
+      "code": "UNIWINDLAB22G"
+    },
+    {
+      "id": 3,
+      "brandName": "GoCar",
+      "affiliateItemName": "20% off Student Discount (capped at RM60)",
+      "images": ["@images/gocar"],
+      "category": "Travel",
+      "code": "GOUNILAH"
+    },
+    {
+      "id": 4,
+      "brandName": "Sunway Pals",
+      "affiliateItemName": "Get RM500 worth of e-vouchers",
+      "images": ["@images/sunwaypals"],
+      "category": "Tech & Mobile",
+      "code": "UNILAH22"
+    },
+    {
+      "id": 5,
+      "brandName": "Redbus",
+      "affiliateItemName": "Save up to 60%",
+      "images": ["@images/redbus"],
+      "category": "Travel",
+      "code": "MYSTU4UM"
+    }
+  ]
+}

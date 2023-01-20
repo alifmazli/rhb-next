@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
-import gocar from "@images/next-deals/gocar.bmp";
 import Header from "@/components/Home/Header/Header";
 import Link from "next/link";
+import images from "@images";
 
 const NextDealsPage = () => {
   const router = useRouter();
@@ -11,13 +11,11 @@ const NextDealsPage = () => {
     <div className="">
       <Header title="NextDeals" />
       <Image
-        src={gocar}
+        src={images.gocar}
         class="w-full h-auto max-w-xl shadow-xl rounded-lg"
         alt="image description"
       />
-      <h2 className="my-2">
-        ID {id}: 20% off Student Discount (capped at RM60)
-      </h2>
+      <h2 className="my-2">20% off Student Discount (capped at RM60)</h2>
       <h3>
         Upload your student ID & enjoy more savings for Round Trip bookings via
         the GoCar app.
