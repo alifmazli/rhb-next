@@ -43,7 +43,7 @@ export default function NextDeals() {
         ))}
       </ul>
       <div className="space-y-2">
-        {deals.map((deal, index) => (
+        {dealsData.map((deal, index) => (
           <Deals data={deal} key={index} />
         ))}
       </div>

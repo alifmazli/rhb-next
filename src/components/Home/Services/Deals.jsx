@@ -14,14 +14,16 @@ const Deals = (props) => {
           <Link href={`/home/next-deals/${props.data.id}`}>
             <Image
               className="image rounded-t-lg"
-              src={gocar}
-              alt={props.data.title}
+              src={props.data.images[0]}
+              alt={props.data.affiliateItemName}
+              width={356}
+              height={356}
             />
           </Link>
         </div>
       </Link>
       <div class="p-5">
-        <h3 class="mb-2 tracking-tight">{props.data.title}</h3>
+        <h3 class="mb-2 ">{props.data.affiliateItemName}</h3>
         <p class="mb-3">{props.data.description}</p>
         <Link
           href="#"

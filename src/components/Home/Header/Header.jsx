@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import rhbLogo from "@images/rhb.png";
+import images from "@images";
 
 const Header = ({ title }) => {
   return (
@@ -8,7 +8,12 @@ const Header = ({ title }) => {
       <nav class="py-4 rounded dark:bg-white">
         <div class="container flex flex-wrap justify-between relative">
           <Link href="/home" class="flex items-center">
-            <Image src={rhbLogo} className="" alt="RHB Logo" height={30} />
+            <Image
+              src={images.rhb}
+              className=""
+              alt="RHB Logo"
+              height={30}
+            />
             <span class="mx-2 self-center text-xl font-bold whitespace-nowrap dark:text-white">
               Next
             </span>
