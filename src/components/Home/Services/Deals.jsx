@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import Link from "next/link";
 import Image from "next/image";
-import gocar from "@images/next-deals/gocar.bmp";
 import HorizontalFilter from "@/components/HorizontalFilter/HorizontalFilter";
 
 const Deals = (props) => {

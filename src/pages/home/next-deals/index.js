@@ -4,27 +4,11 @@ import Header from "@/components/Home/Header/Header";
 import Deals from "@/components/Home/Services/Deals";
 import categories from "@components/HorizontalFilter/categories.json";
 import HorizontalFilter from "@/components/HorizontalFilter/HorizontalFilter";
-import { dealsData } from "./deals-data.json";
-import images from "@images";
+import { data } from "./deals-data.json";
+// import images from "@images";
+import NoSSR from "react-no-ssr";
 
 const inter = Inter({ subsets: ["latin"] });
-
-const deals = [
-  {
-    id: 1,
-    title: "Title 1",
-    description:
-      "Elit irure ullamco sint cillum in cillum excepteur incididunt incididunt Lorem qui.",
-    image: images.redbus,
-  },
-  {
-    id: 2,
-    title: "Title 2",
-    description:
-      "Minim non exercitation incididunt deserunt eiusmod irure amet mollit veniam anim eiusmod deserunt aliqua tempor.",
-    image: images.redbus,
-  },
-];
 
 export default function NextDeals() {
   return (
@@ -42,11 +26,13 @@ export default function NextDeals() {
           <HorizontalFilter data={category} key={category} />
         ))}
       </ul>
-      <div className="space-y-2">
-        {dealsData.map((deal, index) => (
-          <Deals data={deal} key={index} />
-        ))}
-      </div>
+      <NoSSR>
+        <div className="space-y-2">
+          {data.map((deal, index) => (
+            <Deals data={deal} key={index} />
+          ))}
+        </div>
+      </NoSSR>
     </>
   );
 }
