@@ -4,7 +4,7 @@ import Header from "@/components/Home/Header/Header";
 import Deals from "@/components/Home/Services/Deals";
 import categories from "@components/HorizontalFilter/categories.json";
 import HorizontalFilter from "@/components/HorizontalFilter/HorizontalFilter";
-import { data } from "./deals-data.json";
+import data from "./deals-data.js";
 // import images from "@images";
 import NoSSR from "react-no-ssr";
 
