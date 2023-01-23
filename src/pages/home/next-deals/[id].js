@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import Header from "@/components/Home/Header/Header";
 import Link from "next/link";
-import data from "./deals-data.js";
+import data from "../../../constants/deals-data.js";
 
 const NextDealsPage = () => {
   const router = useRouter();
