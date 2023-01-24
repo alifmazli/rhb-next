@@ -11,8 +11,8 @@ export default function NextDeals() {
   return (
     <>
       <Head>
-        <title>RHB NextDeals</title>
-        <meta name="description" content="RHB NextDeals" />
+        <title>NextDeals</title>
+        <meta name="description" content="NextDeals" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
