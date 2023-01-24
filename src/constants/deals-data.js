@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     id: "bjAqv3xbQY2ii1ouAybUsw",
     brandName: "GoCar",
@@ -57,3 +57,5 @@ export default [
     description: "Click below to view Terms and Conditions",
   },
 ];
+
+export default data;
