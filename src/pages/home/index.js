@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header title={`Hello, ${context.userData.name}!`} />
+      <Header title={`Hello, ${context.userBudget.name}!`} />
       <main className="">
         <Card />
         <Services title="RHB Next" services={nextServices} />
