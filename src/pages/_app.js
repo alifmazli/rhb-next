@@ -12,7 +12,7 @@ const poppins = Poppins({
 export default function App({ Component, pageProps }) {
   const [userData, setUserData] = useState({
     name: "RHB user",
-    allowance: 100,
+    income: 100,
     food: 100,
     rental: 100,
     transportation: 100,

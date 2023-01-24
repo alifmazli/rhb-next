@@ -15,8 +15,6 @@ const NextDealsPage = () => {
     }
   });
 
-  console.log(deal);
-
   return (
     <div className="">
       <Header title="NextDeals" />
