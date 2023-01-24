@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import rhb from "@assets/rhb.png";
 
 const Header = ({ title }) => {
   return (
@@ -8,7 +7,15 @@ const Header = ({ title }) => {
       <nav className="py-4 rounded dark:bg-white">
         <div className="container flex flex-wrap justify-between relative">
           <Link href="/home" className="flex items-center">
-            <Image src={rhb} className="" alt="RHB Logo" height={30} />
+            <Image
+              src="/../public/images/rhb.png"
+              className=""
+              alt="RHB Logo"
+              height={30}
+              width={100}
+              placeholder="blur"
+              blurDataURL="/../public/images/rhb.png"
+            />
             <span className="mx-2 self-center text-xl font-bold whitespace-nowrap dark:text-white">
               Next
             </span>
@@ -31,6 +38,8 @@ const Header = ({ title }) => {
                 alt="user photo"
                 width={30}
                 height={30}
+                placeholder="blur"
+                blurDataURL="/../public/images/walter-white.png"
               />
             </button>
           </div>

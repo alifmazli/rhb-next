@@ -20,6 +20,8 @@ export default function Landing() {
                 width={200}
                 height={200}
                 alt="RHB logo"
+                placeholder="blur"
+                blurDataURL="/../public/images/rhb.png"
               />
               <h1 className="text-2xl font-bold sm:text-5xl">App</h1>
             </div>

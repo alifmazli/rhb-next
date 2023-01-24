@@ -36,6 +36,8 @@ const NextDealsPage = () => {
             alt={deal[i].description}
             width={500}
             height={500}
+            placeholder="blur"
+            blurDataURL={imageRelativePath}
           />
           <h2 className="my-2">{deal[i].brandName}</h2>
           <h3>{deal[i].description}</h3>

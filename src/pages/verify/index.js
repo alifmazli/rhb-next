@@ -12,10 +12,12 @@ export default function Verify() {
           <Link className="block text-blue-600" href="/">
             <span className="sr-only">Home</span>
             <Image
-              src="/../public/rhb/rhb-logo.png"
+              src="/../public/images/rhb.png"
               width={100}
               height={100}
               alt="RHB logo"
+              placeholder="blur"
+              blurDataURL="/../public/images/rhb.png"
             />
           </Link>
 
