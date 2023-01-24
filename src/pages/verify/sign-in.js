@@ -1,12 +1,7 @@
-import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function SignIn() {
   const [verified, setVerified] = useState(false);
@@ -40,9 +35,7 @@ export default function SignIn() {
         <h1 className="mt-6 text-2xl font-bold sm:text-3xl md:text-4xl">
           RHB Student Deals and Events
         </h1>
-        <small className="mt-6 text-sm font-medium">
-          Powered by RHB Next
-        </small>
+        <small className="mt-6 text-sm font-medium">Powered by RHB Next</small>
 
         <p className="mt-4 leading-relaxed text-gray-500">
           Verify your student status to enjoy more deals and events.

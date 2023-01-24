@@ -1,17 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import Link from "next/link";
 import Header from "@/components/Home/Header/Header";
-
-const inter = Inter({ subsets: ["latin"] });
-
-const eventPosters = [
-  "/../public/next-events/hack-1.bmp",
-  "/../public/next-events/hack-2.bmp",
-  "/../public/next-events/hack-3.bmp",
-  "/../public/next-events/hack-4.bmp",
-];
 
 export default function NextEvents() {
   return (
@@ -23,9 +11,7 @@ export default function NextEvents() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header title="Next Events" />
-      <div className="container font-bold text-center py-64">
-        Coming soon!
-      </div>
+      <div className="container font-bold text-center py-64">Coming soon!</div>
     </>
   );
 }

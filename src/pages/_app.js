@@ -1,12 +1,28 @@
 import "@/styles/globals.css";
-import { Inter } from "@next/font/google";
+import { Poppins } from "@next/font/google";
+import Script from "next/script";
+import { useState } from "react";
+import AppContext from "@/components/AppContext";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export default function App({ Component, pageProps }) {
+  const [userData, setUserData] = useState({
+    name: "RHB user",
+    allowance: 100,
+    food: 100,
+    rental: 100,
+    transportation: 100,
+    entertainment: 100,
+  });
   return (
-    <main className={inter.className}>
-      <Component {...pageProps} />
+    <main className={`${poppins.className} min-h-screen`}>
+      <AppContext.Provider value={{ userData, setUserData }}>
+        <Component {...pageProps} />
+      </AppContext.Provider>
     </main>
   );
 }

@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 import Header from "@/components/Home/Header/Header";
 import Deals from "@/components/Home/Services/Deals";
 import categories from "@components/HorizontalFilter/categories.json";
@@ -7,8 +6,6 @@ import HorizontalFilter from "@/components/HorizontalFilter/HorizontalFilter";
 import data from "../../../constants/deals-data.js";
 // import images from "@images";
 import NoSSR from "react-no-ssr";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function NextDeals() {
   return (

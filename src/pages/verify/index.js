@@ -1,10 +1,5 @@
-import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
 import Link from "next/link";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Verify() {
   return (
@@ -49,7 +44,7 @@ export default function Verify() {
               </button>
 
               <p className="mt-4 text-sm text-gray-500 sm:mt-0">
-                Powered by RHB 
+                Powered by RHB
               </p>
             </div>
           </form>

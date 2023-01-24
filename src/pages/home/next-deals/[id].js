@@ -22,8 +22,8 @@ const NextDealsPage = () => {
       <Header title="NextDeals" />
       <Image
         src={deal[i].images[0]}
-        className="w-full h-auto max-w-xl shadow-xl rounded-lg"
-        alt="image description"
+        className="image w-full h-auto shadow-xl rounded-lg"
+        alt={deal[i].description}
         width={500}
         height={500}
       />

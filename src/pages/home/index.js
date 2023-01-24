@@ -1,15 +1,13 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import Link from "next/link";
 import Header from "@/components/Home/Header/Header";
 import Card from "@/components/Home/Card/Card";
 import Services from "@/components/Home/Services/Services";
 import FinHealthCheck from "@/components/Home/FinHealthCheck/FinHealthCheck";
-
-const inter = Inter({ subsets: ["latin"] });
+import AppContext from "@/components/AppContext";
+import { useContext } from "react";
 
 export default function Home() {
+  const context = useContext(AppContext);
   const nextServices = ["NextDeals", "NextEvents"];
 
   return (
@@ -21,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header title="Home" />
+      <Header title={`Hello, ${context.userData.name}!`} />
       <main className="">
         <Card />
         <Services title="RHB Next" services={nextServices} />
