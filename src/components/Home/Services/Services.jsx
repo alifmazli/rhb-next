@@ -8,11 +8,11 @@ const Services = ({ title }) => {
         <Link href="home/next-deals">
           <button
             type="button"
-            class="flex flex-col h-24 bg-blue-700 items-center focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-blue-800"
+            className="flex flex-col h-24 bg-blue-700 items-center focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-blue-800"
           >
             <svg
               aria-hidden="true"
-              class="w-5 h-5 mr-2 -ml-1"
+              className="w-5 h-5 mr-2 -ml-1"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -25,11 +25,11 @@ const Services = ({ title }) => {
         <Link href="/home/next-events">
           <button
             type="button"
-            class="flex flex-col h-24 bg-blue-700 items-center focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-blue-800"
+            className="flex flex-col h-24 bg-blue-700 items-center focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-blue-800"
           >
             <svg
               aria-hidden="true"
-              class="w-5 h-5 mr-2 -ml-1"
+              className="w-5 h-5 mr-2 -ml-1"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"

@@ -11,11 +11,11 @@ export default function Verify() {
     <>
       <main
         aria-label="Main"
-        class="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:py-12 lg:px-16 xl:col-span-6 bg-gray-100"
+        className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:py-12 lg:px-16 xl:col-span-6 bg-gray-100"
       >
-        <div class="max-w-xl lg:max-w-3xl">
-          <Link class="block text-blue-600" href="/">
-            <span class="sr-only">Home</span>
+        <div className="max-w-xl lg:max-w-3xl">
+          <Link className="block text-blue-600" href="/">
+            <span className="sr-only">Home</span>
             <Image
               src="/../public/rhb/rhb-logo.png"
               width={100}
@@ -24,14 +24,14 @@ export default function Verify() {
             />
           </Link>
 
-          <h1 class="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
+          <h1 className="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
             RHB Student Deals and Events
           </h1>
           <small className="mt-6 text-sm font-light text-gray-900">
             Powered by RHB Next
           </small>
 
-          <p class="mt-4 leading-relaxed text-gray-500">
+          <p className="mt-4 leading-relaxed text-gray-500">
             RHB Next would like to access:
             <ul>
               <li>- Access to your RHB account</li>
@@ -48,7 +48,7 @@ export default function Verify() {
                 <Link href="/home/next-deals">Approve</Link>
               </button>
 
-              <p class="mt-4 text-sm text-gray-500 sm:mt-0">
+              <p className="mt-4 text-sm text-gray-500 sm:mt-0">
                 Powered by RHB 
               </p>
             </div>
