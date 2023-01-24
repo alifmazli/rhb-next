@@ -10,12 +10,14 @@ const NextDealsPage = () => {
   const router = useRouter();
   const { id } = router.query;
   let i = null;
-  const deal = data.map((deal, index) => {
-    if (deal.id === id) {
+  const deal = data.map((item, index) => {
+    if (item.id === id) {
       i = index;
-      return deal;
+      return item;
     }
   });
+
+  console.log(typeof deal[i].images);
 
   const imageRelativePath = deal[i].images;
 
@@ -31,13 +33,13 @@ const NextDealsPage = () => {
         <div className="">
           <Header title="NextDeals" />
           <Image
-            src={imageRelativePath}
+            src="/../public/images/next-deals-img/gocar.bmp"
             className="image w-full h-auto shadow-xl rounded-lg"
             alt={deal[i].description}
             width={500}
             height={500}
             placeholder="blur"
-            blurDataURL={imageRelativePath}
+            blurDataURL="/../public/images/next-deals-img/gocar.bmp"
           />
           <h2 className="my-2">{deal[i].brandName}</h2>
           <h3>{deal[i].description}</h3>
