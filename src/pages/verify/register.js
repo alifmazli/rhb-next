@@ -16,12 +16,12 @@ export default function SignIn() {
           <Link className="block text-blue-600" href="/">
             <span className="sr-only">Home</span>
             <Image
-              src="/../public/images/rhb.png"
+              src="/images/rhb.png"
               width={100}
               height={100}
               alt="RHB logo"
               placeholder="blur"
-              blurDataURL="/../public/images/rhb.png"
+              blurDataURL="/images/rhb.png"
             />
           </Link>
 

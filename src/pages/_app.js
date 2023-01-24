@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { Poppins } from "@next/font/google";
 import { useState } from "react";
 import AppContext from "@/components/AppContext";
+import NoSSR from "react-no-ssr";
 
 export const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -19,10 +20,12 @@ export default function App({ Component, pageProps }) {
     others: 0,
   });
   return (
-    <main className={`${poppins.className} min-h-screen`}>
-      <AppContext.Provider value={{ userBudget, setUserBudget }}>
-        <Component {...pageProps} />
-      </AppContext.Provider>
-    </main>
+    <NoSSR>
+      <main className={`${poppins.className} min-h-screen`}>
+        <AppContext.Provider value={{ userBudget, setUserBudget }}>
+          <Component {...pageProps} />
+        </AppContext.Provider>
+      </main>
+    </NoSSR>
   );
 }

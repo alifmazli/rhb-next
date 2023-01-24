@@ -8,13 +8,13 @@ const Header = ({ title }) => {
         <div className="container flex flex-wrap justify-between relative">
           <Link href="/home" className="flex items-center">
             <Image
-              src="/../public/images/rhb.png"
+              src="/images/rhb.png"
               className=""
               alt="RHB Logo"
               height={30}
               width={100}
               placeholder="blur"
-              blurDataURL="/../public/images/rhb.png"
+              blurDataURL="/images/rhb.png"
             />
             <span className="mx-2 self-center text-xl font-bold whitespace-nowrap dark:text-white">
               Next
@@ -34,12 +34,12 @@ const Header = ({ title }) => {
               <span className="sr-only">Open user menu</span>
               <Image
                 className="w-8 h-8 rounded-full"
-                src="/../public/images/walter-white.png"
+                src="/images/walter-white.png"
                 alt="user photo"
                 width={30}
                 height={30}
                 placeholder="blur"
-                blurDataURL="/../public/images/walter-white.png"
+                blurDataURL="/images/walter-white.png"
               />
             </button>
           </div>

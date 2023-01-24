@@ -16,12 +16,12 @@ export default function Landing() {
           <div className="mx-auto max-w-xl justify-center text-center">
             <div className="flex justify-center content-center items-end">
               <Image
-                src="/../public/images/rhb.png"
+                src="/images/rhb.png"
                 width={200}
                 height={200}
                 alt="RHB logo"
                 placeholder="blur"
-                blurDataURL="/../public/images/rhb.png"
+                blurDataURL="/images/rhb.png"
               />
               <h1 className="text-2xl font-bold sm:text-5xl">App</h1>
             </div>
