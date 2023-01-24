@@ -20,6 +20,10 @@ export default function Home() {
       </Head>
 
       <Header title={`Hello, ${context.userBudget.name}!`} />
+      <p className="text-gray-400">Balance</p>
+      <h2 className="mb-2 text-white font-semibold tracking-tight">
+        RM 1,350.70
+      </h2>
       <main className="">
         <Card />
         <Services title="RHB Next" services={nextServices} />

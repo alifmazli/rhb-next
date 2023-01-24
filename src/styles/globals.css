@@ -102,15 +102,15 @@ h2 {
 }
 
 h1 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 h3 {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 p {
@@ -166,6 +166,11 @@ button {
   border-radius: 0.75rem;
 }
 
-.card-container p, a h5 {
+.card-container p,
+a h5 {
   color: var(--tertiary-color);
+}
+
+.fin-health-container {
+  border-radius: 0.75rem;
 }

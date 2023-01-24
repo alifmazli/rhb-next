@@ -4,7 +4,23 @@ const Services = ({ title }) => {
   return (
     <div className="mt-4">
       <h2 className="mb-2">{title}</h2>
-      <div className="space-y-2 space-x-2 items-center justify-content-between text-left">
+      <div className="flex flex-row justify-start space-x-2 text-center">
+        {/* <Link className="w-1/2 my-36 sm:w-auto" href="home/next-deals">
+          <button className="flex flex-col items-center justify-center p-0.5 mb-2 mr-2 text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              NextDeals
+            </span>
+          </button>
+        </Link>
+
+        <Link className="w-1/2 my-36 sm:w-auto" href="home/next-events">
+          <button className="flex flex-col items-center justify-center p-0.5 mb-2 mr-2 text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              NextEvents
+            </span>
+          </button>
+        </Link> */}
+
         <Link href="home/next-deals">
           <button
             type="button"
