@@ -38,6 +38,11 @@ export default function Landing() {
                 </button>
               </Link>
             </div>
+            <p className="text-xs mt-2">Best viewed on mobile devices, OR</p>
+            <p className="text-xs mt-2">
+              press <code>F12</code>, then <code>CTRL+SHIFT+M</code>
+            </p>
+            <p className="text-xs mt-2">to toggle mobile view</p>
           </div>
         </div>
       </section>
