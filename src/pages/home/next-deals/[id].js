@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import Header from "@/components/Home/Header/Header";
 import Link from "next/link";
-import data from "../../../constants/deals-data.js";
+import data from "./../../../constants/deals-data.js";
 import Head from "next/head.js";
 import NoSSR from "react-no-ssr";
 
@@ -17,10 +17,6 @@ const NextDealsPage = () => {
     }
   });
 
-  console.log(typeof deal[i].images);
-
-  const imageRelativePath = deal[i].images;
-
   return (
     <>
       <Head>
@@ -33,13 +29,13 @@ const NextDealsPage = () => {
         <div className="">
           <Header title="NextDeals" />
           <Image
-            src="/../public/images/next-deals-img/gocar.bmp"
+            src="/images/next-deals-img/gocar.bmp"
             className="image w-full h-auto shadow-xl rounded-lg"
             alt={deal[i].description}
             width={500}
             height={500}
             placeholder="blur"
-            blurDataURL="/../public/images/next-deals-img/gocar.bmp"
+            blurDataURL="/images/next-deals-img/gocar.bmp"
           />
           <h2 className="my-2">{deal[i].brandName}</h2>
           <h3>{deal[i].description}</h3>
