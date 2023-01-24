@@ -4,7 +4,6 @@ import Deals from "@/components/Home/Services/Deals";
 import categories from "@components/HorizontalFilter/categories.json";
 import HorizontalFilter from "@/components/HorizontalFilter/HorizontalFilter";
 import data from "../../../constants/deals-data.js";
-// import images from "@images";
 import NoSSR from "react-no-ssr";
 
 export default function NextDeals() {
