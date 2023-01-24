@@ -90,9 +90,11 @@ const FinHealthCheck = () => {
 
   const options = {
     options: {
+      categoryPercentage: 0.4,
+      barPercentage: 0.8,
       responsive: true,
       layout: {
-        padding: 20,
+        padding: 15,
       },
     },
     type: "bar",
@@ -107,8 +109,8 @@ const FinHealthCheck = () => {
         position: "top",
         align: "center",
         labels: {
-          boxWidth: 20,
-          boxHeight: 20,
+          // boxWidth: 20,
+          // boxHeight: 20,
           usePointStyle: true,
           pointStyle: "circle",
           color: "#FFFFFF",
@@ -126,7 +128,7 @@ const FinHealthCheck = () => {
     },
     scales: {
       x: {
-        ticks: { color: "#FFFFFF", font: { family: "Fira Code" } },
+        ticks: { color: "#FFFFFF", font: { family: "monospace, Fira Code" } },
         grid: {
           display: false,
         },
@@ -139,7 +141,7 @@ const FinHealthCheck = () => {
         },
       },
       y: {
-        ticks: { color: "#FFFFFF", font: { family: "Fira Code" } },
+        ticks: { color: "#FFFFFF", font: { family: "monospace, Fira Code" } },
         grid: {
           display: false,
         },
@@ -152,12 +154,14 @@ const FinHealthCheck = () => {
   return (
     <div className="py-8">
       <h2 className="mb-2">Financial Health Check</h2>
-      <div className="flex space-y-2 space-x-2 mb-2 py-4 px-2 items-center text-left border rounded-lg">
-        <Bar data={data} height={250} options={options} />
+      <div className="relative w-full inline-flex items-center justify-center p-0.5 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+        <div className="flex w-full space-y-2 space-x-2 py-4 px-4 items-center text-left rounded-lg shadow-xl relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+          <Bar data={data} height={350} options={options} />
+        </div>
       </div>
       <Link href="/home/next-deals" className="">
-        <h3 className="flex font-medium text-gray-300 justify-end">
-          Reduce your expenses by 10%
+        <h3 className="flex mt-2 font-medium text-xs text-white justify-end">
+          Reduce your expenses by 10% now
         </h3>
       </Link>
     </div>
