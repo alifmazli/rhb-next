@@ -102,7 +102,7 @@ const FinHealthCheck = () => {
         <i>Insert chart here</i>
         <Bar data={data} height={300} options={options} />
       </div>
-      <Link href="#" className="">
+      <Link href="/home/next-deals" className="">
         <h3 className="">Reduce your expenses by 10%</h3>
       </Link>
     </div>
