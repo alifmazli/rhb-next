@@ -154,15 +154,18 @@ const FinHealthCheck = () => {
   return (
     <div className="py-8">
       <h2 className="mb-2">Financial Health Check</h2>
-      <div className="fin-health-container relative w-full inline-flex items-center justify-center p-0.5  group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+      <div className="fin-health-container mb-2 relative w-full inline-flex items-center justify-center p-0.5  group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
         <div className="fin-health-container flex w-full space-y-2 space-x-2 py-4 px-4 items-center text-left  shadow-xl relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 group-hover:bg-opacity-0">
           <Bar data={data} height={350} options={options} />
         </div>
       </div>
-      <Link href="/home/next-deals" className="">
-        <h3 className="flex mt-2 font-medium text-xs text-white justify-end">
+      <Link href="home/next-deals" className="flex justify-end">
+        <button
+          type="button"
+          className="flex flex-col h-24 bg-blue-700 items-center focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-2 text-center inline-flex items-center dark:focus:ring-blue-800"
+        >
           Reduce your expenses by 10% now
-        </h3>
+        </button>
       </Link>
     </div>
   );
