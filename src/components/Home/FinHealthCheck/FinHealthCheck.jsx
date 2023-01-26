@@ -69,7 +69,7 @@ const FinHealthCheck = () => {
         borderRadius: 2,
         borderWidth: 2,
         borderSkipped: false,
-        backgroundColor: "#192027",
+        backgroundColor: "#68ecc3",
         borderColor: "#68ecc3",
         barThickness: 15,
         order: 1,
@@ -80,7 +80,7 @@ const FinHealthCheck = () => {
         borderRadius: 2,
         borderWidth: 2,
         borderSkipped: false,
-        backgroundColor: "#272011",
+        backgroundColor: "#ff6384",
         borderColor: "#ff6384",
         barThickness: 15,
         order: 1,
@@ -113,22 +113,28 @@ const FinHealthCheck = () => {
           // boxHeight: 20,
           usePointStyle: true,
           pointStyle: "circle",
-          color: "#FFFFFF",
+          color: "#000000",
         },
         title: {
           text: "Your Budget",
           display: true,
-          color: "#FFFFFF",
+          color: "#000000",
           font: {
             size: 16,
             weight: "bold",
+          },
+          padding: {
+            top: 10,
+            right: 5,
+            bottom: 10,
+            left: 5,
           },
         },
       },
     },
     scales: {
       x: {
-        ticks: { color: "#FFFFFF", font: { family: "monospace, Fira Code" } },
+        ticks: { color: "#000000", font: { family: "monospace, Fira Code" } },
         grid: {
           display: false,
         },
@@ -141,7 +147,7 @@ const FinHealthCheck = () => {
         },
       },
       y: {
-        ticks: { color: "#FFFFFF", font: { family: "monospace, Fira Code" } },
+        ticks: { color: "#000000", font: { family: "monospace, Fira Code" } },
         grid: {
           display: false,
         },
@@ -154,10 +160,10 @@ const FinHealthCheck = () => {
   return (
     <div className="py-8">
       <h2 className="mb-2">Financial Health Check</h2>
-      <div className="fin-health-container mb-2 relative w-full inline-flex items-center justify-center p-0.5  group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-        <div className="fin-health-container flex w-full space-y-2 space-x-2 py-4 px-4 items-center text-left  shadow-xl relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 group-hover:bg-opacity-0">
-          <Bar data={data} height={350} options={options} />
-        </div>
+      <div className="fin-health-container mb-2 shadow-xl relative w-full inline-flex items-center justify-center p-0.5 bg-white">
+        {/* <div className="fin-health-container flex w-full space-y-2 space-x-2 py-4 px-4 items-center text-left  shadow-xl relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 group-hover:bg-opacity-0"> */}
+        <Bar data={data} height={350} options={options} />
+        {/* </div> */}
       </div>
       <Link href="home/next-deals" className="flex justify-end">
         <button
