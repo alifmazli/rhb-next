@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
+import Header from "@components/Home/Header/Header";
+import Button from "@/components/Button";
 
 export default function Landing() {
   return (
@@ -11,8 +13,9 @@ export default function Landing() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="  ">
-        <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+      <Header />
+      <section>
+        {/* <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
           <div className="mx-auto max-w-xl justify-center text-center">
             <div className="flex justify-center content-center items-end">
               <Image
@@ -44,7 +47,86 @@ export default function Landing() {
             </p>
             <p className="text-xs mt-2">to toggle mobile view</p>
           </div>
+        </div> */}
+        <div
+          className="flex-col justify-center content-center items-center h-full w-full"
+          style={{
+            position: "relative",
+            backgroundImage: "url('/images/uni-student.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: 0.75,
+          }}
+        >
+          <h2 className="py-2 px-2">Questioning if you spent too much?</h2>
+          <p className="py-2 px-2">
+            Compare your monthly budgets with students like you and stay updated
+            with the best students deals!
+          </p>
+          <div className="py-2 px-2">
+            <Button label="Get Started" />
+          </div>
         </div>
+      </section>
+
+      <section className="mt-4 space-y-2">
+        <h2>
+          Money management made simple for students, with our hyperpersonalized
+          mobile banking solution
+        </h2>
+        <p>
+          Welcome to RHB NEXT, an innovative mobile banking solution designed
+          specifically for students. It is designed to help you manage your
+          finances more effectively by providing personalized budgeting
+          recommendations based on your spending habits and those of similar
+          students.
+        </p>
+        <p>
+          RHB NEXT also offer a unique feature that recommends deals and
+          discounts to help you save even more. With our app, managing your
+          money has never been easier or more convenient. Try it out today and
+          take control of your financial future!
+        </p>
+      </section>
+
+      <section className="mt-4 space-y-2 text-center">
+        <h2 className="">
+          Compare and save more on your monthly budget for FREE in just 3 easy
+          steps!
+        </h2>
+        <div className="">
+          <div className="">
+            <Image src="" alt="checklist image" />
+            <p>Update your monthly budget</p>
+          </div>
+
+          <div className="">
+            <Image src="" alt="cash image" />
+            <p>
+              Compare your budgeting with students like you within the community
+            </p>
+          </div>
+
+          <div className="">
+            <Image src="" alt="piggy bank image" />
+            <p>
+              Save more using the recommended deals based on your monthly
+              expenses
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mt-4 space-y-2 text-center">
+        <Header />
+        <h2 className="">
+          Simplify student finances with RHB NEXT Hyperpersonalized UniHub
+        </h2>
+        <p>
+          Smart money moves for students, with our hyperpersonalized mobile
+          banking
+        </p>
+        <Button label="Get Started" />
       </section>
     </>
   );
