@@ -29,7 +29,7 @@ export default function SignIn() {
             RHB Student Deals and Events
           </h1>
           <small className="mt-6 text-sm font-medium">
-            Powered by RHB Next
+            Powered by RHB NEXT
           </small>
 
           <p className="mt-4 leading-relaxed text-gray-500">

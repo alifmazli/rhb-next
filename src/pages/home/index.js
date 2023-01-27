@@ -11,7 +11,7 @@ export default function Home() {
   const nextServices = ["NextDeals", "NextEvents"];
 
   return (
-    <>
+    <div className="px-4 py-2">
       <Head>
         <title>Home</title>
         <meta name="description" content="Home" />
@@ -26,9 +26,9 @@ export default function Home() {
       </h2>
       <main className="">
         <Card />
-        <Services title="RHB Next" services={nextServices} />
+        <Services title="RHB NEXT" services={nextServices} />
         <FinHealthCheck />
       </main>
-    </>
+    </div>
   );
 }

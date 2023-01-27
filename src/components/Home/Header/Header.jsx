@@ -2,13 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-const Header = ({ title, profile }) => {
+const Header = ({ title, profile, light }) => {
   const isProfile = profile;
+  const isLight = light;
+
   return (
     <>
-      <nav className="py-4 rounded dark:bg-white">
+      <nav className="py-4">
         <div className="container flex flex-wrap justify-between relative">
-          <Link href="/home" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image
               src="/images/rhb.png"
               className=""
@@ -18,8 +20,12 @@ const Header = ({ title, profile }) => {
               placeholder="blur"
               blurDataURL="/images/rhb.png"
             />
-            <span className="mx-2 self-center text-xl font-bold whitespace-nowrap dark:text-white">
-              Next
+            <span
+              className={`mx-2 self-center text-2xl font-bold ${
+                isLight ? "text-[#111827]" : null
+              }`}
+            >
+              NEXT
             </span>
           </Link>
 

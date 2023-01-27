@@ -1,4 +1,4 @@
-# RHB Get Your Hack On 2023 (Team RHB Next)
+# RHB Get Your Hack On 2023 (Team RHB NEXT)
 ## Introduction
 ### Problem statement
 How might we tailor banking solutions to fresh graduates in order to grow together with them?

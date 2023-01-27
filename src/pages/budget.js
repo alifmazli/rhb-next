@@ -27,10 +27,10 @@ const Budget = () => {
   };
 
   return (
-    <div>
+    <div className="px-4 py-2">
       <Head>
-        <title>RHB Next</title>
-        <meta name="description" content="RHB Next: Home" />
+        <title>RHB NEXT</title>
+        <meta name="description" content="RHB NEXT: Home" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

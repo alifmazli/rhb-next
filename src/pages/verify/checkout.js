@@ -62,7 +62,7 @@ export default function Checkout({ deal }) {
               </button>
 
               <p className="mt-4 text-sm text-gray-500 sm:mt-0 align-right">
-                Powered by RHB Next
+                Powered by RHB NEXT
               </p>
             </div>
           </form>

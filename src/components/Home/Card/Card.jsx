@@ -10,7 +10,7 @@ const Card = () => {
           </h5>
           <p className="text-gray-900">
             Your expenses this month is <b>35% more</b> compared to students
-            like you using RHB Next!
+            like you using RHB NEXT!
           </p>
         </div>
       </div> */}
@@ -20,7 +20,7 @@ const Card = () => {
         </h5>
         <p className="mb-2">
           Your expenses this month is <b>35% more</b> compared to students like
-          you using RHB Next!
+          you using RHB NEXT!
         </p>
       </div>
     </>

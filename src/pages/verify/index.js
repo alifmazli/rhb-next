@@ -25,11 +25,11 @@ export default function Verify() {
             RHB Student Deals and Events
           </h1>
           <small className="mt-6 text-sm font-light text-gray-900">
-            Powered by RHB Next
+            Powered by RHB NEXT
           </small>
 
           <p className="mt-4 leading-relaxed text-gray-500">
-            RHB Next would like to access:
+            RHB NEXT would like to access:
             <ul>
               <li>- Access to your RHB account</li>
               <li>- View and manage your deals and events</li>

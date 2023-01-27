@@ -8,7 +8,7 @@ import NoSSR from "react-no-ssr";
 
 export default function NextDeals() {
   return (
-    <>
+    <div className="px-4 py-2">
       <Head>
         <title>NextDeals</title>
         <meta name="description" content="NextDeals" />
@@ -29,6 +29,6 @@ export default function NextDeals() {
           ))}
         </div>
       </NoSSR>
-    </>
+    </div>
   );
 }
